@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nanum Myeongjo', serif;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f0ecf7;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23bcacfd' fill-opacity='0.24'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quot-container {
+  width: auto;
+  max-width: 900px;
+  padding: 8em 3em 3em 3em;
+  border-radius: 10px;
+  background-color: rgba(233, 222, 250, 0.536);
+  box-shadow: 0 3px 10px 10px rgba(157, 156, 156, 0.1);
+  
+}
+.quote-text{
+  font-size: 2.5rem;
+  color: #4c4c4c;
+}
+.long-quote{
+  font-size: 2rem;
+}
+.quote-author{
+  margin-top: 1em;
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-family: 'Edu QLD Beginner', cursive;
+  font-style: italic;
+}
+.button-container{
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-between;
+}
+button{
+  align-items: center;
+  font-weight: 600;
+  background-color: rgb(253, 253, 253);
+  border: 1px solid #DFDFDF;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #5d5c5c;
+  margin: 0 1em;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 28px;
+  max-width: 100%;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  
+}
+
+button:active,
+button:hover {
+  outline: 0;
+  
+}
+
+button:hover {
+  background-color: #ffabfb32;
+  border-color: rgba(179, 0, 255, 0.042);
+  transform: translate(0, 0.1rem);
+  box-shadow: 0 0.1rem rgba(0, 0, 0, 0);
+}
+.twitter-button:hover{
+  background-color: #34aaff56;
+  color: #38a1f3;
+  border-color: rgba(0, 27, 70, 0.19);
+}
+.fa-twitter{
+  font-size: 1.5rem;
+}
+
+/* Loader */
+.loader {
+  border: 16px solid #e8e7e7; 
+  border-top: 16px solid #ffabfb;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (min-width: 768px) {
+  .button-46 {
+    font-size: 20px;
+    min-width: 200px;
+    padding: 14px 16px;
+  }
+}
+
+
+/* Media Query: Tablet or smaller */
+@media screen and (max-width: 1000){
+  .quote-container{
+    margin: auto 8em;
+    padding: 8em 1em;
+  }
+
+  .quote-text{
+    font-size: .5rem;
+  }
+  
+}
